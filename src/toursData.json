@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "La Union",
+    "description": "Experience the beautiful beaches and surfing spots of La Union.",
+    "price": "Php100",
+    "duration": "3",
+    "image": "https://via.placeholder.com/200",
+    "location": "La Union, Philippines",
+    "date": "2024-08-01",
+    "time": "10:00 AM",
+    "inclusions": "Tour guide, Transportation, Snacks",
+    "exclusions": "Meals, Souvenirs",
+    "highlights": "Surfing, Beach relaxation"
+  },
+  {
+    "id": 2,
+    "name": "Baguio",
+    "description": "Enjoy the cool weather and scenic spots of Baguio.",
+    "price": "Php150",
+    "duration": "2",
+    "image": "https://via.placeholder.com/200",
+    "location": "Baguio City, Philippines",
+    "date": "2024-08-10",
+    "time": "09:00 AM",
+    "inclusions": "Tour guide, Transportation, Entrance fees",
+    "exclusions": "Meals, Souvenirs",
+    "highlights": "Scenic views, Parks, Shopping"
+  }
+]

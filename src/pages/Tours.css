@@ -1,0 +1,125 @@
+.tour-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10rem;
+  padding: 20px;
+  background-color: #f0f0f0;
+  flex-direction: row;
+  gap: 20px;
+}
+.tour-section {
+  margin-top: 4%;
+  max-width: 310px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.tour-img img {
+  width: 310px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* Tour Informations */
+.tour-informations {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 15px; 
+}
+.tour-informations h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 10px;
+  word-wrap: break-word; 
+  white-space: normal; 
+  max-width: 100%;
+  padding-top: 8%;
+}
+
+.tour-informations p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.tour-informations button {
+  background-color: #7e00d6;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tour-location,
+.tour-date,
+.tour-time,
+.tour-inclusions,
+.tour-exclusions,
+.tour-highlights {
+  margin: 1rem 0;
+}
+
+.tour-location h3,
+.tour-date h3,
+.tour-time h3,
+.tour-inclusions h3,
+.tour-exclusions h3,
+.tour-highlights h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tour-list {
+    padding: 10px;
+  }
+
+  .tour-section {
+    flex-direction: column;
+  }
+
+  .tour-informations h2 {
+    font-size: 1.5rem;
+  }
+
+  .tour-informations p {
+    font-size: 0.9rem;
+  }
+
+  .tour-informations button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}

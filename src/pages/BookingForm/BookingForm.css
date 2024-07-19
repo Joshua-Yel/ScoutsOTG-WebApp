@@ -1,0 +1,217 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+.booking-form-container {
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header-booking-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-booking-container h1 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.header-booking-container p {
+  font-size: 1em;
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.tour-duration-picker{
+  margin-bottom: 10px;
+}
+
+.custom-input, .custom-select, .custom-datepicker, .custom-timepicker {
+  max-width: 100%; /* Ensure the input does not exceed container width */
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em; /* Slightly smaller font size for compactness */
+}
+
+.custom-input:focus, .custom-select:focus, .custom-datepicker:focus, .custom-timepicker:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-button, .check-availability-button, .back-button {
+  max-width: 200px; /* Adjust as needed */
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.submit-button {
+  background: #007bff;
+  color: #fff;
+}
+
+.submit-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.check-availability-button {
+  background: #28a745;
+  color: #fff;
+}
+
+.check-availability-button:hover {
+  background: #218838;
+}
+
+.back-button {
+  background: #007bff;
+  color: #fff;
+}
+
+.back-button:hover {
+  background: #0056b3;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Form Sections */
+section {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Custom Inputs and Selects */
+.custom-input,
+.custom-select,
+.custom-datepicker,
+.custom-timepicker {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-input:focus,
+.custom-select:focus,
+.custom-datepicker:focus,
+.custom-timepicker:focus {
+  border-color: #7e00d6;
+  box-shadow: 0 0 0 2px rgba(126, 0, 214, 0.3);
+}
+
+/* Date Picker */
+.custom-datepicker {
+  padding: 10px;
+}
+
+/* Check Availability Button */
+.check-availability-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check-availability-button:hover {
+  background-color: #218838;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Service Details */
+.service-details {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-details h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-details p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Timezone Picker */
+.timezone-picker select {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timezone-picker select:focus {
+  border-color: #7e00d6;
+  box-shadow: 0 0 0 2px rgba(126, 0, 214, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-form-container {
+    padding: 20px;
+  }
+}

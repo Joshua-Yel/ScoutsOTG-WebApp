@@ -1,0 +1,186 @@
+
+.about-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+}
+.about-container h1{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 5%;
+  margin-top: 3%;
+
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 350px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-description {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 3%;
+}
+
+.about-description-list {
+  list-style-type: disc;
+  padding-left: 45px;
+  text-align: left;
+  list-style: none;
+}
+
+.about-description-list li::before {
+  content: '✔   ';
+  color: #7e00d6;
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+}
+
+/* About Sections */
+.about-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center; 
+  flex-direction: row; 
+  margin-left: 11%; 
+}
+
+/* Section */
+.section {
+  margin-top: 50px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.section-text {
+  flex: 1;
+  background-color: #333 var(--bg-overlay-color);;
+}
+
+.section-text h2 {
+  font-size: 2rem;
+  color: #7e00d6;
+  margin-bottom: 10px;
+}
+
+.section-text p {
+  padding-top: 30px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.section-image {
+  flex: 1;
+  max-width: 100%;
+  text-align: center;
+}
+
+.section-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #e4e4e4;
+}
+
+/* Tour Gallery */
+.tour-gallery {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e4e4e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img.enlarged {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(4);
+  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .logo {
+    width: 150px; /* Adjusted logo size for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .about-container {
+    padding: 10px; /* Reduced padding for mobile */
+  }
+
+  .about-container h1 {
+    font-size: 2rem; /* Adjusted font size for mobile */
+  }
+  .about-sections {
+    margin: 5px 8px;
+  }
+  .section {
+    padding: 15px; /* Adjusted padding */
+    margin: 10px auto; /* Adjusted margin */
+    max-width: 90%; /* Ensure the section doesn't stretch too wide */
+  }
+
+  .section-text h2 {
+    font-size: 1.25rem; /* Adjusted font size */
+  }
+
+  .section-text p {
+    padding-top: 10px; /* Adjusted padding */
+    font-size: 0.875rem; /* Adjusted font size */
+  }
+
+  .gallery img {
+    width: 100px; /* Adjusted width */
+    height: 100px; /* Adjusted height */
+  }
+}
